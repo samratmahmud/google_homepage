@@ -10,7 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        slate: {"300": "#dfe1e5", "400": "#f8f9fa", "500": ""},
+        slate: {
+          "300": "#dfe1e5",
+          "400": "#f8f9fa",
+          "500": "#bdc1c6",
+          "600": "rgba(60,64,67,.9)",
+        },
         gray: {
           "200": "#4d5156",
           "300": "#f2f2f2",
@@ -36,12 +41,6 @@ const config: Config = {
       roboto: ["'Roboto'", ...fontFamily.sans],
     },
     backgroundImage: {},
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: "1rem",
-      },
-    },
     screens: {
       sm: "600px",
       md: "768px",

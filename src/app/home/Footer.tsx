@@ -36,38 +36,40 @@ const linksRight = [
 
 function Footer() {
   return (
-    <section className="bg-gray-300">
+    <section className="bg-gray-300 h-24">
+      <div className="">
+        <Link
+          href="/"
+          className="text-md text-gray-500 py-[15px] px-[30px] border-b border-gray-400 flex leading-[normal]"
+        >
+          Bangladesh
+        </Link>
+      </div>
       <div>
-        <div className="text-md text-gray-500 py-[15px] px-[30px] h-12">
-          <Link href="">Bangladesh</Link>
-        </div>
-        <hr className="border border-gray-400" />
-        <div className="container">
-          <div className="flex md:flex-row flex-col justify-between px-1">
-            <div className="flex justify-center">
-              {linksLeft.map((item, index) => (
-                <div
-                  key={index}
-                  className="p-[15px] hover:underline max-h-[46px]"
+        <div className="flex md:flex-row flex-col justify-between px-[35px]">
+          <div className="flex gap-[30px] justify-center">
+            {linksLeft.map((item, index) => (
+              <div key={index} className="py-[15px]">
+                <Link
+                  href={item.url}
+                  className="text-sm text-gray-500 hover:underline flex leading-[normal]"
                 >
-                  <Link href={item.url} className="text-sm text-gray-500">
-                    {item.name}
-                  </Link>
-                </div>
-              ))}
-            </div>
-            <div className="flex justify-center">
-              {linksRight.map((item, index) => (
-                <div key={index} className="p-[15px] max-h-[46px]">
-                  <Link
-                    href={item.url}
-                    className="text-sm text-gray-500 hover:underline"
-                  >
-                    {item.name}
-                  </Link>
-                </div>
-              ))}
-            </div>
+                  {item.name}
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="flex gap-[30px] justify-center">
+            {linksRight.map((item, index) => (
+              <div key={index} className="py-[15px]">
+                <Link
+                  href={item.url}
+                  className="text-sm text-gray-500 hover:underline flex leading-[normal]"
+                >
+                  {item.name}
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>
