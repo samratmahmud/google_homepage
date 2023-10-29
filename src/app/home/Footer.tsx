@@ -4,29 +4,29 @@ import React from "react";
 const linksLeft = [
   {
     name: "About",
-    url: "",
+    url: "https://about.google/?utm_source=google-BD&utm_medium=referral&utm_campaign=hp-footer&fg=1",
   },
   {
     name: "Advertising",
-    url: "",
+    url: "https://ads.google.com/intl/en_bd/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1",
   },
   {
     name: "Business",
-    url: "",
+    url: "https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none",
   },
   {
     name: "How Search works",
-    url: "",
+    url: "https://www.google.com/search/howsearchworks/?fg=1",
   },
 ];
 const linksRight = [
   {
     name: "Privacy",
-    url: "",
+    url: "https://policies.google.com/privacy?hl=en-BD&fg=1",
   },
   {
     name: "Terms",
-    url: "",
+    url: "https://policies.google.com/terms?hl=en-BD&fg=1",
   },
   {
     name: "Settings",

@@ -1,6 +1,16 @@
+import Link from "next/link";
 import React from "react";
 
-const searchProps = ["Google Search", "I'm Feeling Lucky"];
+const searchProps = [
+  {
+    name: "Google Search",
+    url: "/",
+  },
+  {
+    name: "I'm Feeling Lucky",
+    url: "https://www.google.com/doodles",
+  },
+];
 
 function Header() {
   return (
@@ -63,12 +73,13 @@ function Header() {
         </div>
         <div className="pt-[18px] flex justify-center gap-1">
           {searchProps.map((item) => (
-            <div
+            <Link
+              href={item.url}
               className="text-sm
              text-gray-200 bg-slate-400 border hover:border-gray-400 border-gray-100 rounded mt-3 mx-1 px-4 py-1 hover:shadow-sm cursor-pointer"
             >
-              {item}
-            </div>
+              {item.name}
+            </Link>
           ))}
         </div>
       </div>
