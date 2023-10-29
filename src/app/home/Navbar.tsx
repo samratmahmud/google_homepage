@@ -27,21 +27,17 @@ function Navbar() {
             <div className="text-[17px] bg-amber-900/60 text-white flex justify-center items-center w-[32px] h-[32px] rounded-full cursor-pointer">
               S
             </div>
-            <div className="bg-slate-600 py-1.5 px-2 rounded mt-2 hidden absolute group-hover:block right-0 tracking-[0.8px]">
-              <div className="text-xs text-white font-medium mb-1 text-center">
-                Google Account
-              </div>
+            <div className="bg-slate-600 py-1 px-2 rounded mt-2 hidden absolute group-hover:block right-0 tracking-[0.8px] text-[12px] leading-4 text-center">
+              <div className="text-white font-medium mb-1">Google Account</div>
               <div className="mb-3">
                 <img
-                  className="w-14 h-14 rounded-full m-auto"
+                  className="w-12 h-12 rounded-full m-auto"
                   src="/picture/istockphoto-825383494-612x612.jpg"
                   alt=""
                 />
               </div>
-              <div className="text-md leading-[normal] font-medium text-slate-500 text-center">
-                SM Samrat Mahmud
-              </div>
-              <div className="text-xs leading-[normal] font-medium text-slate-500 text-center">
+              <div className="font-medium text-slate-500">SM Samrat Mahmud</div>
+              <div className="font-medium text-slate-500">
                 samratmahmud1999@gmail.com
               </div>
             </div>
