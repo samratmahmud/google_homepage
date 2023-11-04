@@ -1,17 +1,29 @@
 import Link from "next/link";
 import React from "react";
 
+const navLink = [
+  {
+    name: "Gmail",
+    url: "/",
+  },
+  {
+    name: "Images",
+    url: "/",
+  },
+];
+
 function Navbar() {
   return (
-    <section className="p-1.5 pr-[15px]">
+    <nav className="p-1.5 pr-[15px]">
       <div className="flex items-center justify-end pl-8">
         <div className="flex text-xs text-black/[87] font-roboto pr-[15px]">
-          <Link href="/" className="hover:underline pl-[15px]">
-            Gmail
-          </Link>
-          <Link href="/" className="hover:underline pl-[15px]">
-            Images
-          </Link>
+          {navLink.map(({name, url}, index) => (
+            <div key={index}>
+              <Link href={url} className="hover:underline pl-[15px]">
+                {name}
+              </Link>
+            </div>
+          ))}
         </div>
         <div className="flex gap-1 items-center">
           <div
@@ -44,7 +56,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-    </section>
+    </nav>
   );
 }
 
